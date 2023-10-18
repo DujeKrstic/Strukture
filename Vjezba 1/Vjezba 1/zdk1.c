@@ -23,21 +23,21 @@ typedef struct _duje
 }Duje;
 
 int readNorowsInFile() {
-	int noRows = 0;
-	FILE* f = NULL;
+	int counter = 0;
+	FILE* FilePointer = NULL;
 	char buffer[MAX_LINE] = { 0 };
-	f = fopen("dat.txt", "r");
-	if (!f) {
+	FilePointer = fopen("dat.txt", "r");
+	if (!FilePointer) {
 		printf("Greska.\n");
 		return FILE_ERROR_OPEN;
 	}
-	while (!feof(f)) {
-		fgets(buffer, MAX_LINE, f);
-		noRows++;
+	while (!feof(FilePointer)) {
+		fgets(buffer, MAX_LINE, FilePointer);
+		counter++;
 
 	}
-	fclose(f);
-	return noRows;
+	fclose(FilePointer);
+	return counter;
 }
 int main() {
 	int noRows = 0;
