@@ -7,31 +7,41 @@ Napomena: Svaki redak datoteke sadrzi ime i prezime studenta, te broj bodova na 
 relatvan_br_bodova = br_bodova/max_br_bodova*100
 */
 
-#include<stdio.h>
-#include<stdlib.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
 #define MAX_SIZE (50)
 #define MAX_LINE (1024)
 #define FILE_ERROR_OPEN (-1)
 
+typedef struct _duje
+{
+	char name[MAX_SIZE];
+	char surname[MAX_SIZE];
+	double points;
 
-int readNoRowsInFile() {
-	int counter = 0;
-	FILE *filePointer = NULL;
-	char buffer[MAX_LINE] = { 0 };
-}
+}Duje;
 
-typedef struct _student {
-	char ime[50];
-} Student;
-
-int main() {
-
-	//Student student;
-
+int readNorowsInFile() {
 	int noRows = 0;
-	noRows = readNoRowsInFile();
+	FILE* f = NULL;
+	char buffer[MAX_LINE] = { 0 };
+	f = fopen("dat.txt", "r");
+	if (!f) {
+		printf("Greska.\n");
+		return FILE_ERROR_OPEN;
+	}
+	while (!feof(f)) {
+		fgets(buffer, MAX_LINE, f);
+		noRows++;
 
+	}
+	fclose(f);
+	return noRows;
+}
+int main() {
+	int noRows = 0;
+	noRows = readNorowsInFile();
 	printf("%d", noRows);
-
 	return 0;
 }
