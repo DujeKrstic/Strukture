@@ -100,7 +100,7 @@ int main() {
 	int max_number_of_points = 50;
 	double relative_points = 0.0;
 	noRows = readNoRowsInFile();
-	printf("\nBroj redova je %d\n", noRows);
+	printf("\nBroj redova je %d\n\n", noRows);
 
 	Student* students = (Student*)malloc(noRows * sizeof(Student)); //dinamicka alokacija memorije
 	readFromFile(students, noRows);
