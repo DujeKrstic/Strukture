@@ -31,7 +31,7 @@ int readNoRowsInFile() {
 	filePointer = fopen("students.txt", "r");
 
 	if (!filePointer) {
-		printf("\nNema nis");
+		printf("\nNema nicega.");
 		return FILE_ERROR_OPEN;
 	}
 	while (!feof(filePointer)) {
