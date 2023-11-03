@@ -1,2 +1,8 @@
 ﻿  zdk3.c
-  Zadatak 3.vcxproj -> C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 3\x64\Debug\Zadatak 3.exe
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Strukture\Zadatak 3\Zadatak 3\zdk3.c(84,24): warning C4477: 'printf' : format string '%s' requires an argument of type 'char *', but variadic argument 1 has type 'Position'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Strukture\Zadatak 3\Zadatak 3\zdk3.c(84,24): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 2 has type 'char *'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Strukture\Zadatak 3\Zadatak 3\zdk3.c(84,24): warning C4313: 'printf': '%d' in format string conflicts with argument 2 of type 'char *'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Strukture\Zadatak 3\Zadatak 3\zdk3.c(105,13): warning C4013: 'inputListToFIle' undefined; assuming extern returning int
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Strukture\Zadatak 3\Zadatak 3\zdk3.c(108,13): warning C4013: 'inputListFromFile' undefined; assuming extern returning int
+  LINK : C:\Users\Duje\Desktop\Strukture-main\Strukture\Strukture\Zadatak 3\x64\Debug\Zadatak 3.exe not found or not built by the last incremental link; performing full link
+  Zadatak 3.vcxproj -> C:\Users\Duje\Desktop\Strukture-main\Strukture\Strukture\Zadatak 3\x64\Debug\Zadatak 3.exe
