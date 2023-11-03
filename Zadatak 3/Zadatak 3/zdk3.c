@@ -31,6 +31,9 @@ int DeleteAfter(char* surname, Position head);
 int insertAfterPerson(Position P);
 int insertBeforePerson(Position P);
 int  sortedInput(Position P);
+int inputListFromFile(Position P);
+int inputListToFile(Position P);
+
 
 int main() {
 
@@ -102,7 +105,7 @@ int menu(Position head) {
             sortedInput(head);
             break;
         case '9':
-            inputListToFIle(head->next);
+            inputListToFile(head->next);
             break;
         case '0':
             inputListFromFile(head);
@@ -128,7 +131,7 @@ int printList(Position P) {
     else {
 
         while (P != NULL) {
-            printf("%s %s %d\n", P->name, P->surname, P->birthYear);
+            printf(" %s %s %d\n", P->name, P->surname, P->birthYear);
             P = P->next;
         }
     }
@@ -333,7 +336,7 @@ int sortedInput(Position P) {
 
     return 0;
 }
-int inputListToFIle(Position P) {
+int inputListToFile(Position P) {
     FILE* students = NULL;
 
     students = fopen("studenti.txt", "w");
@@ -368,7 +371,7 @@ int inputListFromFile(Position P) {
 
         newPerson = malloc(sizeof(Person));
 
-        fscanf(students, "%s %s %d\n", newPerson->name, newPerson->surname, &newPerson->birthYear);
+        fscanf(students, " %s %s %d\n", newPerson->name, newPerson->surname, &newPerson->birthYear);
 
         newPerson->next = P->next;
         P->next = newPerson;
