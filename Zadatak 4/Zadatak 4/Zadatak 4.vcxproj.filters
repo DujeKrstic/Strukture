@@ -20,8 +20,8 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="polinomi.txt">
-      <Filter>Resource Files</Filter>
+    <Text Include="polynomes.txt">
+      <Filter>Source Files</Filter>
     </Text>
   </ItemGroup>
 </Project>
