@@ -344,7 +344,7 @@ Position insert(int el, Position root) {
     else if (el < root->el) {
         root->left = insert(el, root->left);
     }
-    else if (el > root->el) {
+    else if (el >= root->el) {
         root->right = insert(el, root->right);
     }
     return root;
@@ -365,7 +365,7 @@ Position search(int el, Position root) {
     }
 }
 
-Position deleteElement(int el, Position root) {
+Position  (int el, Position root) {
     if (root == NULL) {
         printf("Nema ga");
     }
@@ -440,7 +440,7 @@ int levelOrder(Position root) {
         return 0;
     }
 
-    Position element[20]; //ukupan broj elemenata u stablu
+    Position element[20] = { 0 }; //ukupan broj elemenata u stablu
     int front = 0, rear = 0;
 
     element[rear++] = root;
