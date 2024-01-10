@@ -1,0 +1,3 @@
+﻿  zdk9.c
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 9\Zadatak 9\zdk9.c(375,13): warning C4047: 'return': 'Position' differs in levels of indirection from 'int'
+  Zadatak 9.vcxproj -> C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 9\x64\Debug\Zadatak 9.exe
