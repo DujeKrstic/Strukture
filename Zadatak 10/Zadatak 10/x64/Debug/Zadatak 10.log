@@ -1,0 +1,11 @@
+﻿  zdk10.c
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(383,3): warning C4047: 'return': 'PositionCountry' differs in levels of indirection from 'int'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(418,4): warning C4047: 'return': 'PositionCountry' differs in levels of indirection from 'int'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(442,3): warning C4047: 'return': 'PositionCity' differs in levels of indirection from 'int'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(491,14): warning C4133: '=': incompatible types - from 'PositionCity' to 'PositionCountry'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(494,15): warning C4133: '=': incompatible types - from 'PositionCity' to 'PositionCountry'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(497,3): warning C4133: 'return': incompatible types - from 'PositionCountry' to 'PositionCity'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(500,3): warning C4133: 'return': incompatible types - from 'PositionCountry' to 'PositionCity'
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(502): warning C4715: 'search': not all control paths return a value
+C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\Zadatak 10\zdk10.c(456): warning C4172: returning address of local variable or temporary: Head
+  Zadatak 10.vcxproj -> C:\Users\Duje\Desktop\Strukture-main\Strukture\Zadatak 10\x64\Debug\Zadatak 10.exe
